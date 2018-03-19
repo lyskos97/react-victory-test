@@ -1,0 +1,73 @@
+module.exports = {
+  env: {
+    es6: true,
+    browser: true,
+  },
+  extends: ['airbnb', 'prettier', 'plugin:flowtype/recommended'],
+  plugins: [
+    'import',
+    'flowtype',
+    'flowtype-errors',
+    'prettier',
+  ],
+  rules: {
+    'react/prefer-stateless-function': 0,
+    'react/jsx-filename-extension': 0,
+    'react/sort-comp': 0,
+    'jsx-a11y/click-events-have-key-events': 0,
+    'jsx-a11y/no-noninteractive-element-interactions': 0,
+    'jsx-a11y/anchor-is-valid': 0,
+    'jsx-a11y/label-has-for': 0,
+    'jsx-a11y/no-static-element-interactions': 0,
+    'class-methods-use-this': 0,
+    'no-plusplus': 0,
+    'no-underscore-dangle': 0,
+    'no-underscore-dangle': 0,
+    'arrow-body-style': 0,
+    'no-unused-expressions': 0,
+    'no-plusplus': 0,
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        devDependencies: [
+          '**/*-test.js',
+          '**/__mocks__/**',
+          '**/__fixtures__/**',
+          '**/demo/**',
+        ],
+      },
+    ],
+    'no-prototype-builtins': 0,
+    'no-restricted-syntax': 0,
+    'no-mixed-operators': 0,
+    'comma-dangle': [
+      'error',
+      {
+        arrays: 'always-multiline',
+        objects: 'always-multiline',
+        imports: 'always-multiline',
+        exports: 'always-multiline',
+        functions: 'ignore',
+      },
+    ],
+    'prettier/prettier': [
+      'error',
+      {
+        printWidth: 100,
+        singleQuote: true,
+        trailingComma: 'es5',
+      },
+    ],
+    'import/prefer-default-export': 0,
+    'arrow-parens': 0,
+    'prefer-destructuring': 0,
+  },
+  globals: {
+    expect: true,
+    it: true,
+    shallow: true,
+    describe: true,
+    spyMount: true,
+    jest: true,
+  },
+};
